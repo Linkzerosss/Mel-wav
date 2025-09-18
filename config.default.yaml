@@ -1,0 +1,23 @@
+# Base
+sample_rate: 44100
+win_size: 2048
+hop_size: 512
+n_mels: 128
+n_fft: 2048
+mel_fmin: 40
+mel_fmax: 16000.0
+f0_extractor: "parselmouth" # or "harvest"
+f0_min: 65
+f0_max: 1600
+
+# Path
+vocoder_path: "path/to/vocoder.onnx"
+input_dir: "path/to/input_dir" # batch_mode_true
+output_dir: "path/to/output_dir" # batch_mode_true
+wave_path: "path/to/wav" # batch_mode_false
+
+# Render
+mel_keyshift: 0
+speed: 1
+vocoder_keyshift: 0 # Use this.
+batch_mode: false # Enable batch processing
